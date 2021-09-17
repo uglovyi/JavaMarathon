@@ -6,6 +6,7 @@ public class Teacher {
     private String name;
     private String subject;
 
+    Random random = new Random();
     public Teacher(String name, String subject) {
         this.name = name;
         this.subject = subject;
@@ -19,9 +20,8 @@ public class Teacher {
     }
 
     public void evaluate(Student student){
-        Random random = new Random();
         int rnd = random.nextInt(4) + 2;
-        String grade = "неизвестно";
+        String grade;
         switch (rnd){
             case 2:
                 grade = "неудовлетворительно";
@@ -32,9 +32,8 @@ public class Teacher {
             case 4:
                 grade =  "хорошо";
                 break;
-            case 5:
+            default:
                 grade =  "отлично";
-                break;
         }
         System.out.println("Преподаватель "+this.getName()+" оценил студента с именем "+student.getName()+" по предмету "+this.getSubject()+" на оценку "+grade+".");
     }
