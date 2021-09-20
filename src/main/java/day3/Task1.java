@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        Scanner scam = new Scanner(System.in);
         while(true) {
-            Scanner scam = new Scanner(System.in);
             String str = scam.next();
             if(str.equals("Stop")) {
                 break;
