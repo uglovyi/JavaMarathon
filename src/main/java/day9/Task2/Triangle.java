@@ -3,7 +3,7 @@ package day9.Task2;
 public class Triangle extends Figure{
     private int side1, side2, side3;
 
-    public Triangle(int side1, int side2, int side3, String color) {
+    public Triangle(int side1,  int side2, int side3, String color) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;

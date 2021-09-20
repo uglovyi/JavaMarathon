@@ -6,7 +6,7 @@ public class Student extends Human{
     public Student(String name, String groupName) {
         super(name);
         this.setName(name);
-        this.groupName = groupName;
+        this.groupName =  groupName;
     }
 
     public String getGroupName() {

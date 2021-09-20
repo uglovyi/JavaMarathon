@@ -3,7 +3,7 @@ package day9.Task2;
 public class Rectangle  extends Figure{
     private int height, width;
 
-    public Rectangle(int height, int width, String color) {
+    public Rectangle(int  height, int width, String color) {
         this.height = height;
         this.width = width;
         this.setColor(color);
