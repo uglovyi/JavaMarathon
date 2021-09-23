@@ -24,7 +24,7 @@ public class Task1 {
     }
     static void businessProcess(Worker worker){
 
-        for (int i = 0; i < 6000; i++) {
+        for (int i = 0; i < 10000; i++) {
             worker.doWork();
         }
         worker.bonus();
