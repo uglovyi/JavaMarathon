@@ -2,6 +2,7 @@ package day15;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -12,6 +13,7 @@ public class Task1 {
         try {
             Scanner scanner = new Scanner(file);
             List<String> list = new ArrayList<>();
+            PrintWriter printWriter = new PrintWriter("shoes0.csv");
 
             while (scanner.hasNext()){
                 String[] dim = scanner.nextLine().split(";");
@@ -22,10 +24,12 @@ public class Task1 {
                     list.add(String.format("%s , %s, %s", dim[0], dim[1], dim[2]));
                 }
             }
+            scanner.close();
             for (String str:
                  list) {
-                System.out.println(str);
+                printWriter.println(str);
             }
+            printWriter.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
