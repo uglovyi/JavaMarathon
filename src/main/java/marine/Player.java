@@ -60,6 +60,10 @@ public class Player {
             }
             System.out.format("Введи координаты %s корабля (формат %s)%n", text1, text2);
             String text = scanner.nextLine();
+            if("map".equals(text)){
+                this.field.printPlayingField();
+                continue;
+            }
             String[] coordinates = text.split(";");
             if (coordinates.length != descsNumber.descsCount) {
                 System.out.format("Надо ввести %d координаты в формате %s%n", descsNumber.descsCount, text2);
