@@ -25,7 +25,6 @@ public class Task2 {
             stringJoiner = new StringJoiner(" ");
             Scanner scanner2 = new Scanner(file1);
             String[] stringArray2 = scanner2.nextLine().split(" ");
-            List<Float> resultArray = new ArrayList<>();
             int counter = 0, sum = 0;
             for (String string2:stringArray2) {
                 counter ++;
